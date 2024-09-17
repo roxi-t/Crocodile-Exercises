@@ -1,0 +1,54 @@
+# Session 4
+
+## 💻 Hard Skills
+
+### Pomodoro Web Page
+- **Objective:** Develop a web page to explain the Pomodoro technique using HTML and CSS.
+- **Method:** Created a webpage with semantic HTML elements, styling it using CSS, and included visual enhancements with images and styled text.
+- **Outcome:** Developed an informative and aesthetically pleasing web page to explain the Pomodoro technique.
+
+#### HTML & CSS Code Snippets:
+```html
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro | پومودورو</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="Assets/font.css">
+</head>
+<body>
+    <h1><span class="nav-header">Pomodoro</span> | <span class="nav-header">پومودورو</span></h1>
+    <!-- Content of the Pomodoro Page -->
+</body>
+</html>
+css
+Copy code
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+    text-align: right;
+}
+
+.nav-header {
+    color: #DE333F;
+}
+
+/* Additional CSS styling */
+Research on Web Colors
+Objective: Understand the use of colors in web design, including different color models like RGB, RGBA, HEX, HSL, and HSLA.
+Method: Studied various color models and their impact on web design aesthetics and user experience.
+Outcome: Enhanced knowledge of using color models to improve the visual appeal and emotional impact of web pages.
+🧠 Soft Skills
+Personal Mission Statement
+Objective: Develop a personal mission statement to define goals and aspirations.
+Content: "If not now, then when? Life moves too fast, and there's no time for waiting. I believe in leaving a mark, just like the greats. For me, dreams are the precursor to talent. Let's turn those dreams into reality!"
+Outcome: Defined a clear personal mission that focuses on making an impact and inspiring future generations.
+Summary
+This session encompassed both technical skills in creating an engaging Pomodoro technique webpage and soft skills in defining a personal mission statement. It highlighted the importance of visual elements in web design and self-awareness in personal development.
