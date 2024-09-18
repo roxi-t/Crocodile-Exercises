@@ -1,0 +1,16 @@
+# Session 5
+
+## 💻 Hard Skills
+
+### Working with Git in a Team Environment
+
+**Repository URL:** [crocodeile-git-exercises](https://github.com/HafezArtist/crocodeile-git-exercises.git)
+
+**Objective:**  
+To practice collaborative version control using Git, focusing on key aspects such as branching, conflict resolution, and creating a release version in a team setting.
+
+**Process Overview:**  
+1. **Cloning the Repository:**
+   - Cloned the shared repository to the local system for collaborative work:
+   ```bash
+   git clone https://github.com/HafezArtist/crocodeile-git-exercises.git

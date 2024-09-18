@@ -1,0 +1,109 @@
+# Crocodile Bootcamp - Session 7
+
+## 💻 Hard Skills
+
+### Web Page with Pseudo-Classes in `<a>` Tags
+
+**Objective:**  
+Create a webpage using HTML and CSS to showcase the use of pseudo-classes in the `<a>` tag for dynamic and interactive link styling.
+
+**Method:**  
+1. **HTML Structure:** Built a webpage structure using semantic HTML tags.
+2. **CSS Styling:** Used various CSS pseudo-classes to style the `<a>` tag, including `:link`, `:visited`, `:hover`, `:active`, and `:focus`.
+3. **Visual Elements:** Added visual elements using images and styled sections to enhance the page's appearance.
+
+#### HTML & CSS Code Snippets:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cro.Code.Ile</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="Assets/font.css">
+</head>
+<body>
+    <header>
+        <section class="nav-header">
+            <div class="nav-img-section">
+                <img src="Assets/Cro-Header.png" alt="image-Header" class="nav-img">
+                <div class="content-section">
+                    <p class="content">
+                        <span class="style-word">به </span>
+                        <span class="style-word-b">مدرسه</span>
+                        <span class="style-word-c">پارت</span>
+                        <br>
+                        <span class="style-word-d">خوش اومدی!</span>
+                    </p>
+                    <footer>
+                        <div class="footer-section">
+                            <img src="Assets/Cro-Footer.png" alt="image-footer" class="footer-img">
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
+```
+body {
+    font-family: Vazirmatn, Arial, sans-serif;
+    direction: rtl;
+    margin: 32px;
+}
+
+.nav-header {
+    width: 1072px;
+    max-width: 100%;
+    background-color: #BCD8D3;
+    margin: auto;
+    padding-top: 80px;
+    height: 1072px;
+}
+```
+/* Additional CSS styling */
+🧠 Soft Skills
+Research on Pseudo-Classes in <a> Tags
+Objective:
+To explore the functionality and use cases of CSS pseudo-classes in styling <a> tags for enhanced user interaction.
+
+Overview of Pseudo-Classes:
+
+:Targets all unvisited links.
+
+a:link {
+  color: blue;
+}
+: Styles links that have already been visited.
+css
+Copy code
+a:visited {
+  color: purple;
+}
+: Applies styles when the mouse hovers over a link.
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+: Applies styles when a link is being activated by the user.
+
+a:active {
+  color: green;
+}
+: Styles elements when they are in focus.
+
+a:focus {
+  outline: 2px solid orange;
+}
+## Use Cases
+Content-Rich Websites (e.g., Wikipedia):
+Uses pseudo-classes to distinguish between visited and unvisited links for easier navigation.
+Login and Signup Forms:
+Uses :focus to highlight the input fields when a user interacts with them.
+Conclusion:
+CSS pseudo-classes offer powerful ways to enhance the interactivity of links within a webpage. By applying different styles based on user interaction, developers can create a more engaging and intuitive browsing experience.
+
+## Summary
+In this session, the focus was on creating an interactive webpage using CSS pseudo-classes for <a> tags to improve user interaction. This included understanding the behavior of different pseudo-classes like :link, :visited, :hover, :active, and :focus, and their impact on the overall user experience of a webpage.
