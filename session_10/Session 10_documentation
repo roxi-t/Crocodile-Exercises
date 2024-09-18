@@ -1,0 +1,61 @@
+
+# Session 10
+
+## 💻 Hard Skills
+
+### HTML & CSS Exercises
+- **Objective:** Learn to manipulate HTML and CSS to create custom forms and enhance user experience.
+- **Method:** Implemented input fields using HTML and CSS, focusing on number fields and methods to hide their default arrows for a more tailored design.
+- **Outcome:** Successfully created a form with customized number fields, ensuring a consistent design across different browsers.
+
+#### HTML & CSS Code Snippets:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Input Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form>
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number">
+    </form>
+</body>
+</html>
+```
+
+```css
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+```
+
+### Research Report
+- **Objective:** Investigate methods to enhance user interface elements and improve web form usability.
+- **Method:** Conducted research on browser-specific methods to hide number input arrows using CSS for a cleaner user interface.
+- **Outcome:** Gained insights into cross-browser compatibility issues and solutions, contributing to a more seamless user experience in form design.
+
+## 🧠 Soft Skills
+
+### Research and Documentation
+- **Objective:** Enhance research and documentation skills by writing a technical report on the usability of input fields.
+- **Content:** Analyzed the impact of hiding number input arrows on user experience and documented best practices for web form design.
+- **Outcome:** Developed the ability to critically evaluate user interface components and provide structured documentation for technical solutions.
+
+### Effective Communication
+- **Objective:** Communicate complex technical concepts in a clear and accessible manner.
+- **Content:** Wrote a detailed README file for the project, explaining the purpose, methods used, and instructions for running the project.
+- **Outcome:** Improved skills in technical writing, making it easier for others to understand and use the project.
+
+## Summary
+
+This session focused on both technical skills in HTML and CSS for customizing form elements and soft skills in research, documentation, and communication. It emphasized the importance of user experience in web design and the ability to convey complex ideas effectively.
