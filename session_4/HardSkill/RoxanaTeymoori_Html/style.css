@@ -1,0 +1,32 @@
+body {
+    font-family: Yekan Bakh FaNum;
+    direction: rtl;
+    margin: 20px;
+}
+h1 {
+    color: black;
+    text-align: right;
+}
+p {
+    text-align: justify;
+}
+ul {
+    list-style-type: disc;
+    margin-right: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.special {
+    font-weight: bold;
+    text-decoration: underline;
+}
