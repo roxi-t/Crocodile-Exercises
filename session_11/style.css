@@ -400,117 +400,125 @@ aside {
     .content-wrapper {
         flex-direction: column;
         gap: 10px;
-        /* برای ایجاد فاصله مناسب در دستگاه‌های کوچک‌تر */
     }
 
     .filter-buttons {
         margin-top: 10px;
-        /* تنظیم فاصله برای دکمه‌های فیلتر در دستگاه‌های کوچک‌تر */
     }
 }
 
 /* Small Mobile (480px and below) */
 @media (max-width: 480px) {
 
-    /* تنظیمات عمومی */
     main {
         flex-direction: column;
         margin: 2% 5%;
+        gap: 20px;
     }
 
     article,
     aside {
         width: 100%;
-        /* هر دو بخش article و aside 100% عرض را بگیرند */
+        margin-bottom: 20px;
     }
 
     .content-wrapper {
         flex-direction: column;
-        gap: 10px;
-        /* فاصله بین بخش‌ها در موبایل */
+        gap: 20px;
     }
 
     .featured-content,
     .other-articles {
         width: 100%;
-        /* همه بخش‌ها 100% عرض صفحه */
     }
 
-    /* بهینه‌سازی تصاویر */
     .image-wrapper img {
         width: 100%;
         height: auto;
-        /* تصاویر به صورت واکنش‌گرا */
     }
 
-    /* بهینه‌سازی اندازه فونت */
     .text-overlay h1 {
         font-size: 16px;
-        /* کاهش اندازه فونت عنوان‌ها برای موبایل */
     }
 
     .text-overlay p {
         font-size: 12px;
-        /* اندازه مناسب برای پاراگراف‌ها */
     }
 
-    /* نمایش سایر بخش‌ها در موبایل */
     .lifestyle-blogs {
-        gap: 5px;
         flex-direction: column;
-        /* بلاگ‌ها به صورت ستونی زیر هم قرار بگیرند */
+        gap: 10px;
     }
 
     .blog-item {
         width: 100%;
-        /* هر بلاگ تمام عرض صفحه را بگیرد */
     }
 
     .sidebar-top,
     .sidebar-bottom {
         width: 100%;
         margin-bottom: 20px;
-        /* هر دو بخش سایدبار به 100% عرض تغییر کنند */
+    }
+
+    .selected-blogs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .blog-entry {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .blog-entry img {
+        width: 60px;
+        height: 60px;
     }
 
     .social-media {
         gap: 10px;
-        /* کاهش فاصله بین آیتم‌های شبکه‌های اجتماعی */
     }
 
     .social-item {
         flex-direction: row;
-        /* نمایش شبکه‌های اجتماعی به صورت افقی */
         justify-content: space-between;
         width: 100%;
-        /* هر آیتم شبکه‌های اجتماعی 100% عرض را بگیرد */
     }
 
-    /* تنظیمات بخش پایین مقاله */
     .article-footer {
         width: 100%;
         margin-top: 20px;
     }
 
-    /* تنظیمات دکمه‌ها */
     .nav-buttons,
     .filter-buttons {
         justify-content: center;
         flex-direction: row;
-        /* دکمه‌های فیلتر و ناوبری در یک ردیف قرار بگیرند */
+        width: 100%;
+        gap: 5px;
     }
 
     .nav-buttons div,
     .filter-buttons div {
         flex: 1;
-        margin: 5px;
         text-align: center;
-        /* دکمه‌ها وسط‌چین شوند */
+        padding: 8px;
+        margin: 5px;
     }
 
     .nav-buttons div a,
     .filter-buttons div a {
         font-size: 12px;
-        /* کاهش اندازه فونت دکمه‌ها برای موبایل */
+    }
+
+    .article-list {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .article-list h4,
+    .article-list p {
+        font-size: 14px;
     }
 }
