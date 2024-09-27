@@ -343,71 +343,6 @@ aside {
 ==================================================================================*/
 
 /* Responsive design for small screens */
-@media (max-width: 1024px) {
-    main {
-        margin: 3% 5%;
-        flex-direction: column;
-        /* بهینه‌سازی برای نمایش ستون‌بندی */
-    }
-
-    article {
-        width: 100%;
-    }
-
-    aside {
-        width: 100%;
-    }
-
-    .featured-content {
-        width: 100%;
-    }
-
-    .other-articles {
-        display: none;
-    }
-
-    .lifestyle-blogs {
-        gap: 10px;
-    }
-
-    .blog-item {
-        width: 50%;
-    }
-}
-
-/* Tablets and smaller devices (768px and below) */
-@media (max-width: 768px) {
-    .text-overlay h1 {
-        font-size: 20px;
-    }
-
-    .text-overlay p {
-        font-size: 12px;
-    }
-
-    .blog-item {
-        width: 100%;
-    }
-
-    aside {
-        display: none;
-    }
-
-    .featured-content {
-        width: 100%;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .filter-buttons {
-        margin-top: 10px;
-    }
-}
-
-/* Small Mobile (480px and below) */
 @media (max-width: 480px) {
 
     main {
@@ -422,13 +357,13 @@ aside {
         margin-bottom: 20px;
     }
 
+    /* Adjust content wrapper layout */
     .content-wrapper {
         flex-direction: column;
         gap: 20px;
     }
 
-    .featured-content,
-    .other-articles {
+    .featured-content {
         width: 100%;
     }
 
@@ -437,32 +372,50 @@ aside {
         height: auto;
     }
 
+    .text-overlay {
+        position: relative;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.5);
+        color: #FFF;
+        padding: 20px;
+        margin-top: -20px;
+    }
+
     .text-overlay h1 {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.3;
     }
 
     .text-overlay p {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .other-articles {
+        width: 100%;
+        order: 2;
+    }
+
+    .article-list {
+        visibility: hidden;
+    }
+
+    .article-list h4,
+    .article-list p {
+        visibility: hidden;
     }
 
     .lifestyle-blogs {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .blog-item {
         width: 100%;
     }
 
-    .sidebar-top,
-    .sidebar-bottom {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
     .selected-blogs {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .blog-entry {
@@ -477,7 +430,8 @@ aside {
     }
 
     .social-media {
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .social-item {
@@ -486,39 +440,111 @@ aside {
         width: 100%;
     }
 
-    .article-footer {
-        width: 100%;
-        margin-top: 20px;
+    .media-info {
+        width: 80%;
+    }
+
+    .media-stats {
+        width: 20%;
     }
 
     .nav-buttons,
     .filter-buttons {
-        justify-content: center;
-        flex-direction: row;
-        width: 100%;
-        gap: 5px;
+        visibility: hidden;
     }
 
     .nav-buttons div,
     .filter-buttons div {
-        flex: 1;
-        text-align: center;
-        padding: 8px;
-        margin: 5px;
+        visibility: hidden;
     }
 
     .nav-buttons div a,
     .filter-buttons div a {
-        font-size: 12px;
+        visibility: hidden;
+    }
+}
+
+/* Mobile Devices and Tablets (768px and below) */
+@media (max-width: 768px) {
+    main {
+        margin: 3% 5%;
+        flex-direction: column;
+        gap: 30px;
     }
 
-    .article-list {
+    article,
+    aside {
         width: 100%;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .article-list h4,
-    .article-list p {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .featured-content {
+        width: 100%;
+    }
+
+    .text-overlay {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+
+    .text-overlay h1 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .text-overlay p {
         font-size: 14px;
+    }
+
+    .lifestyle-blogs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .blog-item {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small Desktops and Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    main {
+        margin: 3% 5%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    article,
+    aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .featured-content {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lifestyle-blogs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .blog-item {
+        width: 48%;
+        margin-bottom: 20px;
     }
 }
